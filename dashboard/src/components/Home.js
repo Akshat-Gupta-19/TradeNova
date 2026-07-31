@@ -10,18 +10,18 @@ const Home = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8080/verify", {
+      .get("https://tradenova-9d2p.onrender.com/verify", {
         withCredentials: true,
       })
       .then((res) => {
         if (res.data.status) {
           setIsAuth(true);
         } else {
-          window.location.href = "http://localhost:3001/login";
+          window.location.href = "https://YOUR-FRONTEND-URL.onrender.com/login";
         }
       })
       .catch(() => {
-        window.location.href = "http://localhost:3001/login";
+        window.location.href = "https://YOUR-FRONTEND-URL.onrender.com/login";
       })
       .finally(() => {
         setLoading(false);

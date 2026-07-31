@@ -9,7 +9,7 @@ const Orders = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8080/allOrders")
+      .get("https://tradenova-9d2p.onrender.com/allOrders")
       .then((res) => {
         setOrders(res.data);
       })

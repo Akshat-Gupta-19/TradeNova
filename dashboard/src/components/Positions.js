@@ -6,7 +6,7 @@ const Positions = () => {
   const [allPositions,setAllPositions] = useState([]);
 
   useEffect(()=>{
-    axios.get("http://localhost:8080/allPositions")
+    axios.get("https://tradenova-9d2p.onrender.com/allPositions")
     .then((res)=>{
       setAllPositions(res.data);
     })

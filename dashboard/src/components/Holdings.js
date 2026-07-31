@@ -20,7 +20,7 @@ const Holdings = () => {
   }
 
   useEffect(()=>{
-    axios.get("http://localhost:8080/allHoldings")
+    axios.get("https://tradenova-9d2p.onrender.com/allHoldings")
     .then((res)=>{
       console.log(res.data);
       setAllHoldings(res.data);

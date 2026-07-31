@@ -38,7 +38,7 @@ const Login = () => {
 
     try {
       const { data } = await axios.post(
-        "http://localhost:8080/login",
+        "https://tradenova-9d2p.onrender.com/login",
         {
           ...inputValue,
         },
@@ -53,7 +53,7 @@ const Login = () => {
         handleSuccess(message);
 
         setTimeout(() => {
-          window.location.href = "http://localhost:3001/";
+          window.location.href = "https://YOUR-DASHBOARD-URL.onrender.com/";
         }, 1000);
       } else {
         handleError(message);
