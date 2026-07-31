@@ -67,8 +67,8 @@ function Navbar() {
             </li>
 
             <li className="nav-item ms-3">
-              <Link className="nav-link" to="#">
-                <i className="fa-solid fa-bars fs-5"></i>
+              <Link className="nav-link" to="/login">
+                Dashboard
               </Link>
             </li>
 

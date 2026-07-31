@@ -72,7 +72,7 @@ const Signup = () => {
 
         <div className="signup-header">
           <h1>Create Account</h1>
-          <p>Join Zerodha Clone and start investing smarter.</p>
+          <p>Join TradeNova and start investing smarter.</p>
         </div>
 
         <form onSubmit={handleSubmit}>
