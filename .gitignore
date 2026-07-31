@@ -1,0 +1,19 @@
+# Dependencies
+**/node_modules/
+
+# Environment
+**/.env
+.env
+
+# Images
+frontend/public/media/images/
+
+# Build
+**/build/
+**/dist/
+
+# Logs
+npm-debug.log*
+
+# macOS
+.DS_Store

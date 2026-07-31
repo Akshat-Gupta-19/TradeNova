@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.nav-link {
+  margin-left: 40px;
+}
+
+#supportHero{
+  background-color: rgb(56,126,209);
+  color: white;
+}
+
+#supportWrapper{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 150px;
+}
+
+#supportHero a{
+  color: white;
+  line-height: 2;
+}
+
+#ticketInput{
+  width: 400px;
+  height: 60px;
+  border-radius: 10px;
+}
+
+.nav-custom {
+  margin-left: 28px;
+  color: #424242 !important;
+  font-size: 15px;
+  font-weight: 500;
+  transition: all 0.25s ease;
+}
+
+.nav-custom:hover {
+  color: #387ed1 !important;
+}
+
+.navbar {
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-brand img {
+  cursor: pointer;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
