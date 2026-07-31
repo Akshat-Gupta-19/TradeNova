@@ -18,15 +18,15 @@ const uri = process.env.MONGO_URL;
 
 const app = express();
 
-app.use(
-  app.use(cors({
-  origin: [
-    "https://tradenova-frontend-5aa8.onrender.com",
-    "https://tradenova-dashboard-wsw7.onrender.com"
-  ],
-  credentials: true
-  }))
-);
+
+app.use(cors({
+origin: [
+  "https://tradenova-frontend-5aa8.onrender.com",
+  "https://tradenova-dashboard-wsw7.onrender.com"
+],
+credentials: true
+}))
+
 
 app.use(bodyParser.json());
 app.use(cookieParser());
