@@ -53,7 +53,7 @@ const Login = () => {
         handleSuccess(message);
 
         setTimeout(() => {
-          window.location.href = "https://YOUR-DASHBOARD-URL.onrender.com/";
+          window.location.href = "https://tradenova-dashboard-wsw7.onrender.com/";
         }, 1000);
       } else {
         handleError(message);

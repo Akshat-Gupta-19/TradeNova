@@ -9,23 +9,25 @@ const Home = () => {
   const [isAuth, setIsAuth] = useState(false);
 
   useEffect(() => {
-    axios
-      .get("https://tradenova-9d2p.onrender.com/verify", {
-        withCredentials: true,
-      })
-      .then((res) => {
-        if (res.data.status) {
-          setIsAuth(true);
-        } else {
-          window.location.href = "https://YOUR-FRONTEND-URL.onrender.com/login";
-        }
-      })
-      .catch(() => {
-        window.location.href = "https://YOUR-FRONTEND-URL.onrender.com/login";
-      })
-      .finally(() => {
-        setLoading(false);
-      });
+  axios
+    .get("https://tradenova-9d2p.onrender.com/verify", {
+      withCredentials: true,
+    })
+    .then((res) => {
+      if (res.data.status) {
+        setIsAuth(true);
+      } else {
+        window.location.href =
+          "https://tradenova-frontend-5aa8.onrender.com/login";
+      }
+    })
+    .catch(() => {
+      window.location.href =
+        "https://tradenova-frontend-5aa8.onrender.com/login";
+    })
+    .finally(() => {
+      setLoading(false);
+    });
   }, []);
 
   if (loading) return <h2>Loading...</h2>;
