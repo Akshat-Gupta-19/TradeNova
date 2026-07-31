@@ -5,9 +5,6 @@
 **/.env
 .env
 
-# Images
-frontend/public/media/images/
-
 # Build
 **/build/
 **/dist/
